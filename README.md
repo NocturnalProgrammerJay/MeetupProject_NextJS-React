@@ -25,11 +25,10 @@ The project is organized into the following directories:
 - `/components`: Contains reusable React components.
 - `/pages`: Contains Next.js pages and API routes.
 - `/public`: Contains static assets such as images and fonts.
-- `/styles`: Contains global CSS styles and utility classes.
 
 ## File-based Routing
 
-Next.js uses file-based routing to automatically generate routes based on the file system. For example, the `/pages/index.js` file represents the homepage of the application. The `/pages/meetups/index.js` file represents the page that displays a list of meetups. By organizing the files in this way, we can create a clean and intuitive directory structure for our application.
+Next.js uses file-based routing to automatically generate routes based on the file system. For example, the `/pages/new-meetups/index.js` file represents the homepage of the application and displays a list of meetups. By organizing the files in this way, we can create a clean and intuitive directory structure for our application.
 
 ## API Routes
 
@@ -54,3 +53,5 @@ The project is hosted on Vercel, which provides an easy and scalable deployment 
 ## Live Demo
 
 Check out the live demo of the React Meetup application at [https://react-meetups-3h8hv1lbj-nocturnalprogrammerjay.vercel.app/](https://react-meetups-3h8hv1lbj-nocturnalprogrammerjay.vercel.app/).
+
+
