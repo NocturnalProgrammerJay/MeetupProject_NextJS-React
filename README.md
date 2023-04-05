@@ -52,6 +52,8 @@ The project is hosted on Vercel, which provides an easy and scalable deployment 
 
 ## Live Demo
 
+![NectJSDemo](https://user-images.githubusercontent.com/96387037/230146271-67b9c50c-36dc-4162-91e4-01a1e1529297.gif)
+
 Check out the live demo of the React Meetup application at [https://react-meetups-3h8hv1lbj-nocturnalprogrammerjay.vercel.app/](https://react-meetups-3h8hv1lbj-nocturnalprogrammerjay.vercel.app/).
 
 
