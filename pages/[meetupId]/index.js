@@ -36,9 +36,16 @@ export async function getStaticPaths() {
   client.close();
 
   return {
-    // tells nextJS whether my paths contains all supported parameters values or just some of them. false means supports all meetupID values if m3 for example then it will give the user an 404 page.
-    // NextJS would try to generate a page for this meetup ID dynamically on the server for the incoming request.
-    fallback: false,
+    /**
+     * 
+    * tells nextJS whether my paths contains all supported parameters values or just some of them. false means supports all meetupID values if m3 for example then it will give the user an 404 page.
+      NextJS would try to generate a page for this meetup ID dynamically on the server for the incoming request.
+      blocking or true means that you are telling nextJS that the list of paths might not be exhausted and there might be more validate page. Wont respond with 404 page if cant find the page immediately.
+      Instead blocking or true nextjs will generate that page on demand and then after cache it, pre generated when needed.
+      true - it would immediately return an empty page, and then pull down the dynamically generated content once that's done.
+      blocking - the user will not see anything until the page was pre-generated, and the finished page will be served.
+     */
+    fallback: "blocking",
     paths: meetups.map((meetup) => ({
       // Update these paths
       params: { meetupId: meetup._id.toString() },
