@@ -28,11 +28,11 @@ The project is organized into the following directories:
 
 ## File-based Routing
 
-Next.js uses file-based routing to automatically generate routes based on the file system. For example, the `/pages/new-meetups/index.js` file represents the homepage of the application and displays a list of meetups. By organizing the files in this way, we can create a clean and intuitive directory structure for our application.
+Next.js uses file-based routing to automatically generate routes based on the file system. For example, the `/pages/new-meetup/index.js` file represents the homepage of the application and displays a list of meetups. By organizing the files in this way, we can create a clean and intuitive directory structure for our application.
 
 ## API Routes
 
-Next.js allows us to create API routes that can be used to handle HTTP requests. For example, the `/pages/api/meetups/index.js` file handles requests to create, read, update, and delete meetups. By using API routes, we can create a powerful and flexible backend for our application.
+Next.js allows us to create API routes that can be used to handle HTTP requests. For example, the `/pages/api/new-meetup/index.js` file handles requests to create, read, update, and delete meetups. By using API routes, we can create a powerful and flexible backend for our application.
 
 ## Server-side Rendering
 
